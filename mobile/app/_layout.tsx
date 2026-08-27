@@ -1,4 +1,4 @@
-// Layout raiz do app: fontes, gate de auth e pilha de navegação principal.
+// Layout raiz do app: carrega fontes, decide auth e monta a pilha de navegação.
 import { useEffect } from 'react';
 import { Stack, useRouter, useSegments } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
