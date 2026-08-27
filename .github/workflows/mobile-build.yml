@@ -48,7 +48,9 @@ jobs:
       - name: Build (push trigger)
         if: github.event_name == 'push'
         working-directory: mobile
-        run: eas build --platform all --profile preview --non-interactive
+        # Só Android por enquanto — build de iOS não-interativo exige credenciais
+        # da Apple (Apple ID, App Store Connect App ID, Team ID) ainda não configuradas.
+        run: eas build --platform android --profile preview --non-interactive
 
       - name: Build (manual trigger)
         if: github.event_name == 'workflow_dispatch'
