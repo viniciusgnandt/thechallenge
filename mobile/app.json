@@ -22,7 +22,10 @@
       "adaptiveIcon": {
         "backgroundColor": "#0f1115"
       },
-      "permissions": ["NOTIFICATIONS"]
+      "permissions": [
+        "android.permission.NOTIFICATIONS",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "plugins": [
       "expo-router",
@@ -31,7 +34,11 @@
       "expo-notifications"
     ],
     "extra": {
-      "router": {}
-    }
+      "router": {},
+      "eas": {
+        "projectId": "5c19830f-3977-453d-974a-098c4375d56e"
+      }
+    },
+    "owner": "viniciusgnandt"
   }
 }
