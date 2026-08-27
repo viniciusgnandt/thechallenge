@@ -24,6 +24,8 @@
       },
       "permissions": [
         "android.permission.NOTIFICATIONS",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.NOTIFICATIONS",
         "android.permission.RECORD_AUDIO"
       ]
     },
@@ -39,6 +41,12 @@
         "projectId": "5c19830f-3977-453d-974a-098c4375d56e"
       }
     },
-    "owner": "viniciusgnandt"
+    "owner": "viniciusgnandt",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/5c19830f-3977-453d-974a-098c4375d56e"
+    }
   }
 }

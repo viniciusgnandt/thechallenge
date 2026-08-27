@@ -32,6 +32,8 @@ app.use(cors({
 
     const allowed = [
       process.env.FRONTEND_URL || 'http://localhost:5174',
+      'https://thechallenge.viniciusgnandt.com.br',
+      'https://apitest-thechallenge.viniciusgnandt.com.br',
       'http://localhost:4174',
       'http://localhost:8081',
       'http://localhost:8082',
@@ -40,10 +42,13 @@ app.use(cors({
     if (
       allowed.includes(origin) ||
       origin.startsWith('exp://') ||
+      origin.startsWith('exp+') ||
       origin.startsWith('https://u.expo.dev') ||
-      origin.startsWith('https://expo.dev')
+      origin.startsWith('https://expo.dev') ||
+      origin.startsWith('https://expo.io')
     ) return callback(null, true);
 
+    console.warn('CORS bloqueado para origem:', origin);
     callback(new Error('Not allowed by CORS'));
   },
   credentials: true,

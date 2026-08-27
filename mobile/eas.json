@@ -8,7 +8,8 @@
       "distribution": "internal",
       "android": {
         "buildType": "apk"
-      }
+      },
+      "channel": "development"
     },
     "preview": {
       "distribution": "internal",
@@ -20,7 +21,8 @@
       },
       "env": {
         "EXPO_PUBLIC_API_URL": "https://apitest-thechallenge.viniciusgnandt.com.br/api"
-      }
+      },
+      "channel": "preview"
     },
     "production": {
       "android": {
@@ -28,7 +30,8 @@
       },
       "env": {
         "EXPO_PUBLIC_API_URL": "https://apitest-thechallenge.viniciusgnandt.com.br/api"
-      }
+      },
+      "channel": "production"
     }
   },
   "submit": {
