@@ -20,7 +20,7 @@ export default function MyChallengesScreen() {
       data={enrollments || []}
       keyExtractor={(e) => e._id}
       contentContainerStyle={{ padding: 16 }}
-      ListEmptyComponent={enrollments !== null ? <EmptyState icon="flame-outline" title="Você ainda não está em nenhum desafio" /> : null}
+      ListEmptyComponent={enrollments !== null ? <EmptyState icon="flame-outline" title="Você ainda não está em nenhum desafio" /> : undefined}
       renderItem={({ item }) => {
         const total = item.challenge?.durationDays || 100;
         const pct = Math.min(100, Math.round((item.completedDays / total) * 100));

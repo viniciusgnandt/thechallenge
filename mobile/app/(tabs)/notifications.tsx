@@ -36,7 +36,7 @@ export default function NotificationsScreen() {
         data={items || []}
         keyExtractor={(n) => n._id}
         contentContainerStyle={{ padding: 16, paddingBottom: 40 }}
-        ListEmptyComponent={items !== null ? <EmptyState icon="notifications-outline" title="Nenhuma notificação ainda" /> : null}
+        ListEmptyComponent={items !== null ? <EmptyState icon="notifications-outline" title="Nenhuma notificação ainda" /> : undefined}
         renderItem={({ item }) => (
           <TouchableOpacity
             style={[styles.row, !item.read && styles.unread]}

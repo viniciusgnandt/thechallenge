@@ -25,7 +25,7 @@ export default function MedalsScreen() {
       contentContainerStyle={{ padding: 16, gap: 14 }}
       ListEmptyComponent={enrollments !== null ? (
         <EmptyState icon="ribbon-outline" title="Nenhuma medalha ainda" subtitle="Complete um desafio de 100 dias para conquistar sua primeira medalha" />
-      ) : null}
+      ) : undefined}
       renderItem={({ item }) => (
         <TouchableOpacity style={styles.card} onPress={() => router.push(`/enrollment/${item._id}/certificate`)}>
           <LinearGradient colors={['#FDE68A', '#F59E0B']} style={styles.medalCircle}>

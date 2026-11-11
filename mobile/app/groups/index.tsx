@@ -70,7 +70,7 @@ export default function GroupsScreen() {
         data={groups || []}
         keyExtractor={(g) => g._id}
         contentContainerStyle={{ padding: 16, paddingTop: 0 }}
-        ListEmptyComponent={groups !== null ? <EmptyState icon="people-outline" title="Você ainda não está em nenhum grupo" subtitle="Crie um grupo ou entre com o código de um amigo" /> : null}
+        ListEmptyComponent={groups !== null ? <EmptyState icon="people-outline" title="Você ainda não está em nenhum grupo" subtitle="Crie um grupo ou entre com o código de um amigo" /> : undefined}
         renderItem={({ item }) => (
           <TouchableOpacity style={styles.card} onPress={() => router.push(`/groups/${item._id}`)}>
             <View style={styles.groupIcon}><Ionicons name="people" size={20} color={colors.primary} /></View>

@@ -48,7 +48,7 @@ export default function RankingScreen() {
           ))}
         </View>
       }
-      ListEmptyComponent={ranking !== null ? <EmptyState icon="trophy-outline" title="Ninguém no ranking ainda" /> : null}
+      ListEmptyComponent={ranking !== null ? <EmptyState icon="trophy-outline" title="Ninguém no ranking ainda" /> : undefined}
       renderItem={({ item, index }) => (
         <View style={styles.row}>
           <View style={[styles.posCircle, index < 3 && { backgroundColor: medalColor(index) }]}>

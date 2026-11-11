@@ -41,7 +41,7 @@ export default function SearchScreen() {
         data={results}
         keyExtractor={(u) => u._id}
         contentContainerStyle={{ padding: 16 }}
-        ListEmptyComponent={searched ? <EmptyState icon="person-outline" title="Nenhum atleta encontrado" /> : null}
+        ListEmptyComponent={searched ? <EmptyState icon="person-outline" title="Nenhum atleta encontrado" /> : undefined}
         renderItem={({ item }) => (
           <TouchableOpacity style={styles.row} onPress={() => router.push(`/user/${item._id}`)}>
             <Avatar name={item.name} uri={item.avatar} size={44} />

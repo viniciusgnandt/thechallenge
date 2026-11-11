@@ -91,11 +91,11 @@ export default function FeedScreen() {
         refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primary} />}
         onEndReachedThreshold={0.4}
         onEndReached={loadMore}
-        ListFooterComponent={loadingMore ? <ActivityIndicator color={colors.primary} style={{ marginTop: 10 }} /> : null}
+        ListFooterComponent={loadingMore ? <ActivityIndicator color={colors.primary} style={{ marginTop: 10 }} /> : undefined}
         ListEmptyComponent={posts !== null ? (
           <EmptyState icon="flame-outline" title="Nenhuma atividade ainda"
             subtitle="Complete um dia de desafio ou publique algo para começar o feed." />
-        ) : null}
+        ) : undefined}
         renderItem={({ item }) => (
           <PostCard
             post={item}

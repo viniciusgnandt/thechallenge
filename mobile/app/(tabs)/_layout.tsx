@@ -15,10 +15,10 @@ export default function TabsLayout() {
       }}
     >
       <Tabs.Screen name="index" options={{
-        tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'flame' : 'flame-outline'} size={25} color={color} />,
+        tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'flame' : 'flame-outline'} size={25} color={color as string} />,
       }} />
       <Tabs.Screen name="explore" options={{
-        tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'trophy' : 'trophy-outline'} size={24} color={color} />,
+        tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'trophy' : 'trophy-outline'} size={24} color={color as string} />,
       }} />
       <Tabs.Screen name="create" options={{
         tabBarIcon: () => (
@@ -29,10 +29,10 @@ export default function TabsLayout() {
         ),
       }} />
       <Tabs.Screen name="notifications" options={{
-        tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'notifications' : 'notifications-outline'} size={24} color={color} />,
+        tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'notifications' : 'notifications-outline'} size={24} color={color as string} />,
       }} />
       <Tabs.Screen name="profile" options={{
-        tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'person-circle' : 'person-circle-outline'} size={26} color={color} />,
+        tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'person-circle' : 'person-circle-outline'} size={26} color={color as string} />,
       }} />
     </Tabs>
   );

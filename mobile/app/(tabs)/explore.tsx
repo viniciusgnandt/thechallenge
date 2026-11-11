@@ -46,7 +46,7 @@ export default function ExploreScreen() {
             </View>
           </ImageBackground>
         }
-        ListEmptyComponent={challenges !== null ? <EmptyState title="Nenhum desafio publicado ainda" /> : null}
+        ListEmptyComponent={challenges !== null ? <EmptyState title="Nenhum desafio publicado ainda" /> : undefined}
         renderItem={({ item }) => (
           <TouchableOpacity activeOpacity={0.9} style={styles.card} onPress={() => router.push(`/challenge/${item.slug}`)}>
             <LinearGradient colors={colors.gradientFire} start={{ x: 0, y: 1 }} end={{ x: 0, y: 0 }} style={styles.stripe} />
