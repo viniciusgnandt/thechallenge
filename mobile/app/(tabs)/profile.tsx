@@ -70,7 +70,7 @@ export default function ProfileScreen() {
         renderItem={({ item }) => (
           <TouchableOpacity style={styles.gridItem} onPress={() => router.push(`/post/${item._id}`)}>
             {item.type === 'medal' ? (
-              <View style={[styles.gridInner, { backgroundColor: '#FFFBEB' }]}><Ionicons name="trophy" size={22} color={colors.gold} /></View>
+              <View style={[styles.gridInner, { backgroundColor: 'rgba(255,184,0,0.12)' }]}><Ionicons name="trophy" size={22} color={colors.gold} /></View>
             ) : (
               <View style={styles.gridInner}>
                 <Ionicons name={item.type === 'checkin' ? 'checkmark-circle' : 'chatbubble-ellipses'} size={18} color={colors.primary} />

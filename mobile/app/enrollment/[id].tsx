@@ -102,8 +102,8 @@ export default function EnrollmentProgressScreen() {
         <View style={styles.grid}>
           {days.map(({ task, submission }: any) => {
             const status = submission?.status;
-            const bg = status === 'approved' ? '#ECFDF5' : status === 'pending' ? '#FFFBEB' : status === 'rejected' ? '#FEF2F2' : colors.surface2;
-            const fg = status === 'approved' ? '#059669' : status === 'pending' ? '#B45309' : status === 'rejected' ? '#DC2626' : colors.textLight;
+            const bg = status === 'approved' ? 'rgba(34,197,94,0.14)' : status === 'pending' ? 'rgba(255,184,0,0.12)' : status === 'rejected' ? 'rgba(239,68,68,0.14)' : colors.surface2;
+            const fg = status === 'approved' ? '#4ADE80' : status === 'pending' ? '#FBBF24' : status === 'rejected' ? '#F87171' : colors.textLight;
             return (
               <TouchableOpacity key={task.day} style={[styles.dayCell, { backgroundColor: bg }]} onPress={() => setSelected({ task, submission })}>
                 <Text style={{ color: fg, fontWeight: '800', fontSize: 12 }}>{task.day}</Text>
@@ -162,12 +162,12 @@ function LegendDot({ color, label }: { color: string; label: string }) {
 
 const styles = StyleSheet.create({
   summaryCard: { flexDirection: 'row', alignItems: 'center', backgroundColor: colors.surface, borderRadius: 16, padding: 16, marginBottom: 12, ...shadow.sm },
-  summaryTitle: { fontSize: 17, fontFamily: 'Fraunces_600SemiBold', color: colors.text },
+  summaryTitle: { fontSize: 17, fontFamily: 'BarlowCondensed_800ExtraBold_Italic', color: colors.text },
   levelTag: { alignSelf: 'flex-start', backgroundColor: colors.gradientSoft, borderRadius: 20, paddingHorizontal: 9, paddingVertical: 2, marginTop: 6 },
   levelTagText: { color: colors.primary, fontSize: 10, fontWeight: '800', textTransform: 'uppercase' },
   summarySub: { color: colors.textMuted, fontSize: 12, marginTop: 6 },
   pct: { fontSize: 24, fontFamily: 'PlusJakartaSans_800ExtraBold', color: colors.primary },
-  completedCard: { flexDirection: 'row', alignItems: 'center', gap: 12, backgroundColor: '#FFFBEB', borderRadius: 14, padding: 14, marginBottom: 12 },
+  completedCard: { flexDirection: 'row', alignItems: 'center', gap: 12, backgroundColor: 'rgba(255,184,0,0.12)', borderRadius: 14, padding: 14, marginBottom: 12 },
   completedTitle: { fontWeight: '800', color: colors.text, fontSize: 13.5 },
   completedSub: { color: colors.textMuted, fontSize: 11.5, marginTop: 2 },
   syncButton: { flexDirection: 'row', gap: 8, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.primary, borderRadius: 9999, padding: 13, marginBottom: 16, ...shadow.primary },

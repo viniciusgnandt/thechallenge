@@ -10,7 +10,7 @@ export default function Avatar({ name, size = 40, uri }: { name?: string; size?:
   const letter = name?.trim()?.[0]?.toUpperCase() || '?';
   return (
     <LinearGradient
-      colors={[colors.gradientSoft, '#FFE5EC']}
+      colors={[colors.gradientSoft, 'rgba(225,29,29,0.25)']}
       style={[styles.circle, { width: size, height: size, borderRadius: size / 2 }]}
     >
       <Text style={{ color: colors.primary, fontWeight: '800', fontSize: size * 0.4 }}>{letter}</Text>

@@ -66,10 +66,10 @@ export default function FeedScreen() {
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
-      <LinearGradient colors={colors.gradient} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.header}>
+      <LinearGradient colors={['#1A0805', '#3A0E05', '#7A1A05']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.header}>
         <View>
-          <Text style={styles.headerTitle}>TheChallenge</Text>
-          <Text style={styles.headerSubtitle}>Veja o que a comunidade está fazendo</Text>
+          <Text style={styles.headerTitle}>THE <Text style={{ color: colors.accent }}>CHALLENGE</Text></Text>
+          <Text style={styles.headerSubtitle}>QUEM TREINOU HOJE? 🔥</Text>
         </View>
         <View style={{ flexDirection: 'row', gap: 8 }}>
           {streak > 0 && (
@@ -113,8 +113,8 @@ export default function FeedScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.bg },
   header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 20, paddingBottom: 24, borderBottomLeftRadius: 24, borderBottomRightRadius: 24 },
-  headerTitle: { color: '#fff', fontSize: 23, fontFamily: 'Fraunces_600SemiBold' },
-  headerSubtitle: { color: 'rgba(255,255,255,0.8)', fontSize: 12.5, marginTop: 2 },
+  headerTitle: { color: '#fff', fontSize: 32, lineHeight: 34, fontFamily: 'BarlowCondensed_900Black_Italic' },
+  headerSubtitle: { color: 'rgba(255,255,255,0.75)', fontSize: 15, fontFamily: 'BarlowCondensed_800ExtraBold_Italic', marginTop: 2 },
   searchBtn: { width: 40, height: 40, borderRadius: 20, backgroundColor: 'rgba(255,255,255,0.2)', alignItems: 'center', justifyContent: 'center' },
   streakBadge: { flexDirection: 'row', alignItems: 'center', gap: 4, backgroundColor: 'rgba(255,255,255,0.2)', borderRadius: 20, paddingHorizontal: 10, height: 40 },
   streakText: { color: '#fff', fontWeight: '800', fontSize: 13 },

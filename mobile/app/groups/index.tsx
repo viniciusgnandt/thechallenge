@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
   groupMeta: { color: colors.textMuted, fontSize: 11.5, marginTop: 2 },
   modalOverlay: { flex: 1, backgroundColor: 'rgba(15,15,20,0.55)', alignItems: 'center', justifyContent: 'center', padding: 24 },
   modalCard: { backgroundColor: colors.surface, borderRadius: 20, padding: 22, width: '100%' },
-  modalTitle: { fontSize: 17, fontFamily: 'Fraunces_600SemiBold', color: colors.text },
+  modalTitle: { fontSize: 17, fontFamily: 'BarlowCondensed_800ExtraBold_Italic', color: colors.text },
   input: { backgroundColor: colors.surface2, borderRadius: 10, padding: 13, color: colors.text, marginBottom: 14 },
   submitBtn: { backgroundColor: colors.primary, borderRadius: 9999, padding: 14, alignItems: 'center' },
   submitBtnText: { color: '#fff', fontWeight: '800' },

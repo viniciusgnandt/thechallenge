@@ -1,14 +1,14 @@
 import { Tabs } from 'expo-router';
-import { View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
-import { colors } from '../../src/constants/colors';
+import { colors, shadow } from '../../src/constants/colors';
 
 export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarStyle: { backgroundColor: colors.surface, borderTopColor: colors.border, height: 60, paddingBottom: 8, paddingTop: 8 },
+        tabBarStyle: { backgroundColor: '#0D0D0D', borderTopColor: colors.border, height: 64, paddingBottom: 8, paddingTop: 8 },
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.textLight,
         tabBarShowLabel: false,
@@ -18,13 +18,14 @@ export default function TabsLayout() {
         tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'flame' : 'flame-outline'} size={25} color={color} />,
       }} />
       <Tabs.Screen name="explore" options={{
-        tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'compass' : 'compass-outline'} size={25} color={color} />,
+        tabBarIcon: ({ color, focused }) => <Ionicons name={focused ? 'trophy' : 'trophy-outline'} size={24} color={color} />,
       }} />
       <Tabs.Screen name="create" options={{
         tabBarIcon: () => (
-          <View style={{ width: 42, height: 42, borderRadius: 21, backgroundColor: colors.primary, alignItems: 'center', justifyContent: 'center', marginBottom: 4 }}>
-            <Ionicons name="add" size={26} color="#fff" />
-          </View>
+          <LinearGradient colors={colors.gradientFire} start={{ x: 0, y: 1 }} end={{ x: 1, y: 0 }}
+            style={{ width: 46, height: 46, borderRadius: 23, alignItems: 'center', justifyContent: 'center', marginBottom: 6, ...shadow.primary }}>
+            <Ionicons name="add" size={28} color="#fff" />
+          </LinearGradient>
         ),
       }} />
       <Tabs.Screen name="notifications" options={{

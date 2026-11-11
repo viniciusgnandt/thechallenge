@@ -42,7 +42,7 @@ export default function MyChallengesScreen() {
 
 const styles = StyleSheet.create({
   card: { backgroundColor: colors.surface, borderRadius: 16, padding: 16, marginBottom: 12, ...shadow.sm },
-  cardTitle: { color: colors.text, fontSize: 17, fontFamily: 'Fraunces_600SemiBold' },
+  cardTitle: { color: colors.text, fontSize: 17, fontFamily: 'BarlowCondensed_800ExtraBold_Italic' },
   levelTag: { alignSelf: 'flex-start', backgroundColor: colors.gradientSoft, borderRadius: 20, paddingHorizontal: 10, paddingVertical: 3, marginTop: 6, marginBottom: 12 },
   levelTagText: { color: colors.primary, fontSize: 10.5, fontWeight: '800', textTransform: 'uppercase' },
   progressBar: { height: 8, backgroundColor: colors.surface2, borderRadius: 999, overflow: 'hidden' },

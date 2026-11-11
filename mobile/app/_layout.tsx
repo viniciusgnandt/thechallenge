@@ -4,7 +4,7 @@ import { Stack, useRouter, useSegments } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import Toast from 'react-native-toast-message';
 import { useFonts, PlusJakartaSans_400Regular, PlusJakartaSans_500Medium, PlusJakartaSans_700Bold, PlusJakartaSans_800ExtraBold } from '@expo-google-fonts/plus-jakarta-sans';
-import { Fraunces_500Medium, Fraunces_600SemiBold, Fraunces_700Bold } from '@expo-google-fonts/fraunces';
+import { BarlowCondensed_700Bold_Italic, BarlowCondensed_800ExtraBold_Italic, BarlowCondensed_900Black_Italic } from '@expo-google-fonts/barlow-condensed';
 import { useAuthStore } from '../src/store/authStore';
 import { colors } from '../src/constants/colors';
 import { registerForPushNotifications } from '../src/utils/notifications';
@@ -18,9 +18,9 @@ export default function RootLayout() {
     PlusJakartaSans_500Medium,
     PlusJakartaSans_700Bold,
     PlusJakartaSans_800ExtraBold,
-    Fraunces_500Medium,
-    Fraunces_600SemiBold,
-    Fraunces_700Bold,
+    BarlowCondensed_700Bold_Italic,
+    BarlowCondensed_800ExtraBold_Italic,
+    BarlowCondensed_900Black_Italic,
   });
 
   useEffect(() => { loadUser(); }, []);
@@ -40,11 +40,11 @@ export default function RootLayout() {
 
   return (
     <>
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
       <Stack screenOptions={{
-        headerStyle: { backgroundColor: colors.surface },
+        headerStyle: { backgroundColor: colors.bg },
         headerTintColor: colors.text,
-        headerTitleStyle: { fontFamily: 'PlusJakartaSans_700Bold', fontSize: 16 },
+        headerTitleStyle: { fontFamily: 'BarlowCondensed_800ExtraBold_Italic', fontSize: 22 },
         headerShadowVisible: false,
         contentStyle: { backgroundColor: colors.bg },
       }}>

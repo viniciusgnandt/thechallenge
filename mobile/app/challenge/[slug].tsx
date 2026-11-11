@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.bg },
   durationBadge: { flexDirection: 'row', alignItems: 'center', gap: 4, alignSelf: 'flex-start', backgroundColor: colors.primary, borderRadius: 20, paddingHorizontal: 10, paddingVertical: 4, marginBottom: 10 },
   durationBadgeText: { color: '#fff', fontSize: 11, fontWeight: '800' },
-  title: { fontSize: 24, fontFamily: 'Fraunces_600SemiBold', color: colors.text, marginBottom: 8 },
+  title: { fontSize: 24, fontFamily: 'BarlowCondensed_800ExtraBold_Italic', color: colors.text, marginBottom: 8 },
   desc: { color: colors.textMuted, marginBottom: 20, lineHeight: 20 },
   sectionTitle: { fontSize: 15, fontFamily: 'PlusJakartaSans_700Bold', color: colors.text, marginBottom: 12 },
   levelBtn: { flex: 1, borderWidth: 1.5, borderColor: colors.border, borderRadius: 14, paddingVertical: 12, alignItems: 'center' },

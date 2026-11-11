@@ -75,7 +75,7 @@ export default function SubscribeScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.bg },
   iconWrap: { width: 56, height: 56, borderRadius: 28, backgroundColor: colors.gradientSoft, alignItems: 'center', justifyContent: 'center', marginBottom: 12 },
-  title: { fontSize: 20, fontFamily: 'Fraunces_600SemiBold', color: colors.text, textAlign: 'center' },
+  title: { fontSize: 20, fontFamily: 'BarlowCondensed_800ExtraBold_Italic', color: colors.text, textAlign: 'center' },
   subtitle: { color: colors.textMuted, fontSize: 13, textAlign: 'center', marginTop: 6, paddingHorizontal: 20 },
   card: { backgroundColor: colors.surface, borderRadius: 20, padding: 20, ...shadow.sm },
   priceLabel: { color: colors.textMuted, fontSize: 12 },

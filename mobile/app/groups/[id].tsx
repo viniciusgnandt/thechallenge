@@ -64,7 +64,7 @@ export default function GroupDetailScreen() {
 
 const styles = StyleSheet.create({
   card: { backgroundColor: colors.surface, borderRadius: 16, padding: 18, marginBottom: 16, ...shadow.sm },
-  groupName: { fontSize: 18, fontFamily: 'Fraunces_600SemiBold', color: colors.text },
+  groupName: { fontSize: 18, fontFamily: 'BarlowCondensed_800ExtraBold_Italic', color: colors.text },
   groupCode: { color: colors.textMuted, fontSize: 13, marginTop: 6 },
   leaveBtn: { flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: 14, alignSelf: 'flex-start' },
   leaveBtnText: { color: colors.danger, fontWeight: '700', fontSize: 12.5 },
