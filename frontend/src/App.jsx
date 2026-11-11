@@ -38,8 +38,8 @@ export default function App() {
     <AuthProvider>
       <BrowserRouter>
         <Toaster position="top-center" toastOptions={{
-          style: { background: '#fff', color: '#12131A', border: '1px solid #ECECEF', boxShadow: '0 8px 28px rgba(20,20,30,0.10)', fontWeight: 600 },
-          success: { iconTheme: { primary: '#FF5722', secondary: '#fff' } },
+          style: { background: '#1F1F1F', color: '#fff', border: '1px solid #2A2A2A', boxShadow: '0 8px 28px rgba(20,20,30,0.10)', fontWeight: 600 },
+          success: { iconTheme: { primary: '#FF6B00', secondary: '#fff' } },
         }} />
         <Navbar />
         <div style={{ minHeight: '70vh' }}>

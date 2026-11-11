@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="container navbar-inner">
         <Link to="/" className="logo" onClick={() => setOpen(false)}>
           <span className="logo-icon"><Flame size={19} strokeWidth={2.5} /></span>
-          TheChallenge
+          <span className="display" style={{ fontSize: '1.6rem' }}>THE <span className="text-accent">CHALLENGE</span></span>
         </Link>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }} className="nav-desktop">

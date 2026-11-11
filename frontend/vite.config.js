@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5174,
     proxy: {
       '/api': {
-        target: 'http://localhost:3002',
+        target: process.env.API_PROXY || 'http://localhost:3002',
         changeOrigin: true,
       },
     },

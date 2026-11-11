@@ -4,7 +4,7 @@ import { Flame, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer style={{ borderTop: '1px solid var(--border)', marginTop: 60, padding: '40px 0', background: 'white' }}>
+    <footer style={{ borderTop: '1px solid var(--border)', marginTop: 60, padding: '40px 0', background: 'var(--bg-card)' }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
         <Link to="/" className="logo">
           <span className="logo-icon"><Flame size={17} strokeWidth={2.5} /></span>

@@ -90,7 +90,7 @@ export default function EnrollmentPage() {
       </div>
 
       {enrollment.status === 'completed' && (
-        <div className="card card-pad" style={{ marginBottom: 24, display: 'flex', alignItems: 'center', gap: 16, background: 'var(--gradient-soft)', boxShadow: 'none', border: '1px solid #FFD9C2' }}>
+        <div className="card card-pad" style={{ marginBottom: 24, display: 'flex', alignItems: 'center', gap: 16, background: 'var(--gradient-soft)', boxShadow: 'none', border: '1px solid var(--border-strong)' }}>
           <Award size={32} color="var(--gold)" />
           <div style={{ flex: 1 }}>
             <strong>Parabéns, você concluiu o desafio! 🎉</strong>
